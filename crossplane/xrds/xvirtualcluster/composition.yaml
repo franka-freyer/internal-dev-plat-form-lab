@@ -14,7 +14,8 @@ spec:
     base:
       apiVersion: helm.crossplane.io/v1beta1
       kind: Release
-      name: vcluster-test
+      metadata:
+        name: vcluster-test
       spec:
         forProvider:
           chart:
@@ -66,7 +67,8 @@ spec:
     base:
       apiVersion: cluster.argocd.crossplane.io/v1alpha1
       kind: Cluster
-      name: vcluster-test
+      metadata:
+        name: vcluster-test
       spec:
         forProvider:
           labels:
@@ -104,7 +106,8 @@ spec:
     base:
       apiVersion: apiextensions.crossplane.io/v1beta1
       kind: Usage
-      name: argo-cluster-uses-helm-release
+      metadata:
+        name: argo-cluster-uses-helm-release
       spec:
         of:
           apiVersion: helm.crossplane.io/v1beta1
