@@ -1,0 +1,5 @@
+apiVersion: idp.frankalab/v1alpha1
+kind: VirtualCluster
+metadata:
+  name: procect-lab
+spec: {}
